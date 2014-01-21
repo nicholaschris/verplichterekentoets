@@ -1,0 +1,11 @@
+indexes:
+
+- kind: EmailDatabase
+  ancestor: yes
+  properties:
+  - name: name
+    direction: desc
+  - name: email_address
+    direction: desc
+  - name: date
+    direction: desc
