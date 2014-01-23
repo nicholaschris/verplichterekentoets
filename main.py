@@ -27,7 +27,7 @@ class EmailDatabase(ndb.Model):
 @app.route('/')
 @app.route('/<name>')
 def main(name=None):
-    return render_template('index8.html', name=name)
+    return render_template('index9.html', name=name)
 
 @app.route('/thanks', methods=['POST'])
 @app.route('/thanks/<name>', methods=['POST'])

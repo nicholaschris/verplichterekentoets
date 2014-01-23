@@ -5,7 +5,7 @@
 /* 28px */
 /* 24px */
 .welcome-message {
-  padding:120px 160px;
+  padding:120px 160px 80px 160px;
 }
 .welcome-message h6 {
   text-transform: none;
@@ -118,7 +118,8 @@ select#role {
 }
 /*only fo flat-ui free*/body {
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Georgia", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -489,7 +490,8 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Georgia", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
