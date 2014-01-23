@@ -9,6 +9,8 @@ import cgi
 
 import urllib
 
+import jinja2
+
 from google.appengine.api import users
 from google.appengine.ext import ndb
 
@@ -16,6 +18,9 @@ from google.appengine.ext import ndb
 from flask import Flask
 from flask import request, render_template
 app = Flask(__name__.split('.')[0])
+
+# from jinja2 import Environment, PackageLoader
+# env = Environment(loader=PackageLoader('verplichterekentoets', 'templates'))
 
 def email_key(email_name='DEFAULT_NAME'):
     return ndb.Key('EmailDatabase', email_name)
@@ -27,7 +32,7 @@ class EmailDatabase(ndb.Model):
 @app.route('/')
 @app.route('/<name>')
 def main(name=None):
-    return render_template('index9.html', name=name)
+    return render_template('welcome.html', name=name)
 
 @app.route('/thanks', methods=['POST'])
 @app.route('/thanks/<name>', methods=['POST'])

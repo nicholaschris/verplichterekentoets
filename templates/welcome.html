@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<section class="content-13" style="padding: 20px 0px;">
+    <div class="container">
+        <div class="row">
+            <form action="/thanks" method="post">
+                <div class="welcome-message">
+                    <h3>
+                        De<span style="letter-spacing:3px;"><em> beste </em></span>manier om je voor te bereiden op de verplichte rekentoets.
+                    </h3>
+                </div>
+                <div class="offset2 span8 sign-up-container">
+                    <div class="signup-blurb">
+                        Op de hoogte blijven van de laatste ontwikkelingen?
+                    </div>
+                    <div class="signup-blurb">
+                        Wil je één van de eersten zijn die de rekentoets kan oefenen?
+                    </div>
+                    <div class="row">
+                        <div class="span4 signup-pre-input">
+                            <h6>Ik ben een</h6>
+                        </div>
+                        <div id="email-signup" class="span4">
+                            <select id="role" name="list" value="Ik_ben" class="bg-clouds select-block span4">
+                            <option value="0"> ...</option>
+                            <option value="leraar">
+                                        leraar
+                            </option>
+                            <option value="student">
+                                        student
+                            </option>
+                            <option value="ouder">
+                                        ouder
+                            </option>
+                            <option value="innovator">
+                                        innovator
+                            </option>
+                            <option value="bijdrager">
+                                        bijdrager
+                            </option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span4 signup-pre-input">
+                            <h6>en mijn email-adres is</h6>
+                        </div>
+                        <div id="email-signup" class="span4 bg-clouds">
+                            <input name="email_address" type="text" placeholder='ik@voorbeeld.nl' spellcheck="false" class="span4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span4"></div>
+                        <div class="span4">
+                            <button id="subscribe-button" class="btn btn-large btn-block btn-primary" type="submit">
+                                <b>Blijf op de hoogte!</b>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+        <section style="padding: 100px 0px;">
+            <div class="container">
+                <div class="offset2 span7">
+                    <div class="features">
+                        <p>&bull; Leren in je eigen tempo</p>
+                    </div>
+                    <div class="features">
+                        <p>&bull; Krijg onmiddellijk feedback</p>
+                    </div>
+                    <div class="features">
+                        <p> &bull; Oefenen tot je het onder de knie hebt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="simple-block" id="overview">
+            <div id="khan-exercise-container" class="container">
+                <div id="khan-exercise-example"><img src="img/khan-example.png"></div>
+            </div>
+        </section>
+
+        <section class="simple-block" id="overview">
+            <div class="container">
+                <div class="holder">
+                    <p class="span8">
+                        Met de van de verplichte rekentoets per schooljaar 2014-2015 moeten scholen hun leerlingen opeens klaar stomen voor een extra toets.
+
+                        Door het huidige tekort aan leerkrachten is het voor veel scholen lastig om hier extra aandacht aan te geven.
+
+                        Omdat leerlingen wel goed voorbereid moeten worden hebben we deze website gemaakt, zo kunnen ze zelf het heft in handen nemen.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+         <section class="header-11-sub bg-clouds">
+            <div class="container">
+                <div class="row">
+                    <div class="span6">
+                        <p>
+                            Wil je op de hoogte gehouden worden van de ontwikkeling van dit platform? Wil je één van de eersten zijn die de kans krijgt het te gebruiken? Laat dan hier je e-mail achter en we nemen contact met je op.
+                        </p>
+                    </div>
+                    <div class="row span6">
+                        <div class="span4">
+                            <input name="email_address" type="text" placeholder='ik@voorbeeld.nl' spellcheck="false" class="span4">
+                        </div>
+                        <div class="span4">
+                            <button id="subscribe-button-two" class="btn btn-large btn-block btn-primary" type="submit">
+                                <b>Blijf op de hoogte!</b>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="span3">
+                        <input type="checkbox" name="testers" value="beta"><span class="beta-blurb">I would like to beta test?</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock %}
