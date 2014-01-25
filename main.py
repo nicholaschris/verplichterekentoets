@@ -1,6 +1,4 @@
 """ main.py is the top level script.
-
-Return "Hello World" at the root URL.
 """
 
 import os
