@@ -4,6 +4,57 @@
 /* 29px */
 /* 28px */
 /* 24px */
+#specific-message {
+  padding: 50px 0px 0px 0px;
+}
+
+#specific-message p {
+  font-size: 2em;
+  font-family:'Georgia';
+  font-weight:100;
+  letter-spacing:1.5px;
+}
+
+#more-info {
+  padding: 60px 0px;
+}
+
+#more-info p {
+  font-size: 2em;
+  padding:40px 0px;
+  font-family:'Georgia';
+  font-weight:100;
+  letter-spacing:1.5px;
+}
+
+#more-info li {
+  color:#34495E;
+  padding: 10px;
+  font-size: 1.5em;
+  font-family:'Georgia';
+  font-weight:100;
+  letter-spacing:1px;
+}
+
+#thankyou-blurb h1 {
+  font-size: 40px;
+  padding:40px 0px;
+  font-family:'Georgia';
+  font-weight:100;
+  letter-spacing:1.5px;
+}
+
+#slides-holder div.container {
+  padding-bottom: 100px;
+}
+
+#overons h1 {
+  padding:40px 0px;
+  font-family:'Georgia';
+  font-weight:100;
+  letter-spacing:1.5px;
+}
+
 .beta-blurb {
   padding:10px;
   color: #333;

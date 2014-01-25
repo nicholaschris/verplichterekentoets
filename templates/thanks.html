@@ -1,52 +1,54 @@
 {% extends "base.html"%}
+{% block title %}Bedankt{% endblock %}
 {% block content %}
-        <section class="header-11-sub" style="padding: 40px 0px 20px 0px;">
-            <div class="background">&nbsp;</div>
-            <div class="container">
-                <div class="row">
-                        <div class="span6 offset3" style="background-color:#ECF0F1;text-align:center;font-size:3em;padding:20px;">
-                            <h3 style="font-size:1.3em;">Dank u voor uw belangstelling</h3>
-                            <p  style="font-size:0.7em;">We zullen binnenkort contact met u op</p>
-                        </div>
+    <section id="thankyou-blurb" class="header-11-sub">
+        <div class="container">
+            <div class="row">
+                <div class="span8 offset2">
+                    <h1>Dank u voor uw belangstelling<br><small>We zullen binnenkort contact met u op</small></h1>
+                </div>
             </div>
-        </section>
-        <section class="header-11-sub bg-clouds" style="padding: 10px 0 0 0;">
-            <div id="bgVideo" class="background">&nbsp;</div>
-            <div class="container">
-                <div class="row">
-                           <div class="span6 offset3" style="background-color:#BDC3C7;padding:20px;">
-                                <p>Je bent een {{ name }} en je email-adres is {{ email }}. Als u meer wilt weten over wat een {{ role }} kan doen lees verder. Als u meer wilt weten <a href="/overons">Over ons</a>, klikt op over ons.</p>
-                        </div>
-                    </div>
-        </section>
-        <section class="header-11-sub bg-clouds" style="padding: 10px 0 0 0;">
-            <div id="bgVideo" class="background">&nbsp;</div>
-            <div class="container">
-                <div class="row">
-                           <div class="span6 offset3" style="background-color:#BDC3C7;padding:20px;">
-                            <p style="font-size:1.3em;">Met de invoering van de verplichte rekentoets per schooljaar 2014-2015 moeten scholen opeens een extra vak geven. Door het huidige tekort aan leerkrachten zijn hier vaak geen docenten voor beschikbaar. Toch moeten leerlingen goed voorbereid worden op de stof die in dit examen wordt getest.</p>
-                           </div>
-
-                        </div>
-                    </div>
-        </section>
-        <section class="header-11-sub bg-clouds" style="padding: 10px 0 40px 0;">
-            <div id="bgVideo" class="background">&nbsp;</div>
-            <div class="container">
-                <div class="row">
-                           <div class="span6 offset3" style="background-color:#BDC3C7;padding:20px;">
-                            <p style="font-size:1.3em;">We willen wij een platform ontwikkelen waar leerlingen makkelijk, snel, en zelfstandig de domeinen uit de rekentoets onder de knie kunnen krijgen. </p>
-                            <p>Voorgestelde functies:</p>
-                                <ul style="color:#34495E">
-                                    <li>Automatisch gegenereerde oefeningen zorgen ervoor dat leerlingen kunnen blijven oefenen tot ze de stof beheersen</li>
-                                    <li>Door de oefeningen te koppelen aan de uitleg van onderliggende concepten krijgt een leerling die moeite heeft met een onderwerp op zijn/haar gemak meer duidelijkheid.</li>
-                                    <li>Dashboards voor leerlingen en leraren zorgen ervoor dat de vooruitgang per leerling zowel individueel als per klas overzichtelijk blijft. Zo is het voor de leraar helder waar hij/zij eventueel in moet springen en de leerling kan in een oogopslag zien hoeveel er nog ingehaald moet worden.</li>
-                                    <li>Het toevoegen van gamification-elementen zorgt ervoor dat leerlingen makkelijker gemotiveerd blijven omdat ze constante feedback krijgen in de vorm van een ‘bonus punten’-systeem in plaats van het reguliere en demotiverende ‘min-punten’ systeem wat meestal bij scholen in gebruik is. </li>
-                                </ul>
-                           </div>
-                           
-                        </div>
-                    </div>
-        </section>
+        </div>
+    </section>
+    <section id="specific-message" class="header-11-sub">
+        <div class="container">
+            <div class="row">
+                <div class="span8 offset2">
+                    <p>
+                        Je bent een {{ name }} en je email-adres is {{ email }}. Als u meer wilt weten over wat een {{ role }} kan doen lees verder. Als u meer wilt weten <a href="/overons">Over ons</a>, klikt op over ons.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header-11-sub bg-clouds" style="display:none">
+        <div class="container">
+            <div class="row">
+                <div class="span8 offset2">
+                    <p>
+                        Met de invoering van de verplichte rekentoets per schooljaar 2014-2015 moeten scholen opeens een extra vak geven. Door het huidige tekort aan leerkrachten zijn hier vaak geen docenten voor beschikbaar. Toch moeten leerlingen goed voorbereid worden op de stof die in dit examen wordt getest.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="more-info" class="header-11-sub">
+        <div class="container">
+            <div class="row">
+                <div class="span8 offset2">
+                    <p>
+                        We willen wij een platform ontwikkelen waar leerlingen makkelijk, snel, en zelfstandig de domeinen uit de rekentoets onder de knie kunnen krijgen. 
+                    </p>
+                    <p>Voorgestelde functies:</p>
+                    <ul>
+                        <li>Automatisch gegenereerde oefeningen zorgen ervoor dat leerlingen kunnen blijven oefenestof beheersen</li>
+                        <li>Door de oefeningen te koppelen aan de uitleg van onderliggende concepten krijgt een lmoeite heeft met een onderwerp op zijn/haar gemak meer duidelijkheid.</li>
+                        <li>Dashboards voor leerlingen en leraren zorgen ervoor dat de vooruitgang per leeindividueel als per klas overzichtelijk blijft. Zo is het voor de leraar helder waar hij/ziin moet springen en de leerling kan in een oogopslag zien hoeveel er nog ingehaald moet worden.</li>
+                        <li>Het toevoegen van gamification-elementen zorgt ervoor dat leerlingen makkelijker blijven omdat ze constante feedback krijgen in de vorm van een ‘bonus punten’-systeem inhet reguliere en demotiverende ‘min-punten’ systeem wat meestal bij scholen in gebruik is. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
