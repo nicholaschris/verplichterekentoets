@@ -176,12 +176,22 @@
   /*height: 600px;*/
 }
 
+.features {
+  min-width: 300px;
+}
+
 .features p{
   height: 60px;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 5px;
   line-height:60px;
-  color:#333
+  color:#333;
+  text-align: center;
+}
+
+.features img {
+  display: block;
+  margin: 0 auto;
 }
 
 .simple-block {

@@ -20,6 +20,8 @@ app = Flask(__name__.split('.')[0])
 # from jinja2 import Environment, PackageLoader
 # env = Environment(loader=PackageLoader('verplichterekentoets', 'templates'))
 
+#error handlers
+
 def email_key(email_name='DEFAULT_NAME'):
     return ndb.Key('EmailDatabase', email_name)
 
@@ -49,3 +51,12 @@ def thanks(name=None, email='unknown'):
 @app.route('/overons/<name>')
 def about(name=None, email='unknown'):
     return render_template('overons.html')
+
+@app.route('/contact')
+# @app.route('/contact/<name>')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/platform')
+def platform():
+    return render_template('platform.html')
